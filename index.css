@@ -1,0 +1,150 @@
+/* for height and width, use 100vh and 100vw to set it to 100% viewer heigh and width. Very nice */
+
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #fcf8f3;
+}
+
+.flex{
+  display: flex;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fcf8f3;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #5b6786;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  min-height: 1vh;
+  padding: 6% 2%;
+  background-color: #bbb;
+  text-align: left;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+.home{
+  background-color: #fcf8f3;
+  min-height: 500px;
+}
+
+.nav-list{
+  justify-content: center;
+}
+
+.nav-link{ 
+  font-size: 1.2rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: .3vw 2vw;
+  color: #5b6786;
+  height: 2rem;
+}
+
+.nav-link:hover{
+  border-bottom: 3px solid #5b6786;
+}
+
+main{
+  padding-top: 70px;
+}
+
+footer{
+  background-color: #fff;
+}
+
+.button-container{
+  display: inline-block;
+}
+
+.home{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
+
+.button-solid{
+  background-color: #5b6786;
+  border-color: #5b6786;
+  border-style: none;
+  color: #fcf8f3;
+  border-radius: 2px;
+  min-height: 1.5rem;
+  min-width: 5rem;
+}
+
+.button-solid:hover{
+  background-color: #5b6786d8;
+  border-color: #5b6786d8;
+}
+
+.button-border{
+  background-color: #fcf8f3;
+  border-color: #5b6786;
+  border-style: solid;
+  border-radius: 2px;
+  min-height: 1.5rem;
+  min-width: 5rem;
+  color: #444;
+}
+
+.button-border:hover{
+  background-color: #5b6786;
+  border-color: #5b6786;
+  border-style: none;
+  color: #fcf8f3;
+  background-color: #5b6786d8;
+  border-color: #5b6786d8;
+}
+
+.project{
+  flex-direction: column; 
+}
+
+.project-screenshot{
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px black solid;
+  min-height: 350px;
+}
+
+.tech-logo{
+  width: 22px;
+  display: block;
+
+  border: 1px black solid;
+  height: 22px;
+}
