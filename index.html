@@ -9,12 +9,12 @@
 </head>
 <body>
   <nav role="navigation" class="flex nav-list">
-      <a href="" class="nav-link">David Haugen</a>
+      <a href="" class="nav-link" id="home-link">David Haugen</a>
       <a href="" class="nav-link" id="projects-link">Projects</a>
-      <a href="" class="nav-link">About me</a>
+      <a href="" class="nav-link" id="about-link">About me</a>
   </nav>
   <main>
-    <section class="home">
+    <section class="home flex">
       <p id="home-paragraph">
       Hi, I'm David. I'm a full-stack developer in Minneapolis, MN. I love dogs, learning, and learning about dogs.  Feel free to check out my work below and email me or  if you see something you like.
       </p>
@@ -28,34 +28,47 @@
       </div>
   </section>
     <section class="project flex">
-      <div class="project-title-container">
-        <h2 class="project-title">Animal quiz</h2>
-        <div class="image-container">
+      <div class="project-container">
+        <h2 class="project-title project-item">Animal quiz</h2>
+        <div class="image-container project item">
           <img src="/images/animal-quiz.png" alt="Project screenshot" class="project-screenshot">
         </div>
-        <div class="technologies-container flex">
+        <div class="technologies-container flex project-item">
           <img src="/images/html5-logo-bw-small.png" alt="HTML5 logo" class="tech-logo">
           <img src="/images/css-logo-gray-small.png" alt="CSS logo" class="tech-logo">
           <img src="/images/javascript-logo-transparent-black-small.png" alt="JavaScript logo" class="tech-logo">
-          <img src="/images/jquery-logo-bw-small.png" alt="jQuery logo" class="tech-logo">
+          <img src="/images/jquery-logo-gray-transparent.png" alt="jQuery logo" class="tech-logo">
           <img src="/images/Github-logo.png" alt="Github logo" class="tech-logo">            
         </div>
-        <p class ="project-description">Animal Facts Quiz is a clean, simple app that allows users to test themselves on strange animal facts. The app tracks user progress, provides feedback, and provides a summary of user results at the end of the quiz. </p>
-      </div>
+        <p class ="project-description project-item">Animal Facts Quiz is a clean, simple app that allows users to test themselves on strange animal facts. The app tracks user progress, provides feedback, and provides a summary of user results at the end of the quiz. </p>
       
-      <div class="project-links">
+      
+      <div class="project-links project-item">
           <form class="button-container" id="repo-form">
-            <button type="submit">View repo</button>
+            <button type="submit" class="button-border">View repo</button>
           </form>
           <form class="button-container" id="live-form">
-            <button type="submit">Live app</button>
+            <button type="submit" class="button-solid">Live app</button>
           </form>
         </div>
+      </div>
     </section>
-    <section class="project">Project 2</section>
-    <section class="project">Project 3</section>
-    <section class="about-me">About me</section>
-    <footer class="footer">Footer</footer>
+    <!-- <section class="project">Project 2</section>
+    <section class="project">Project 3</section> -->
+    <section class="about-me flex">
+      <p class="about-me-paragraph">
+          I'm always trying to learn something new. If I'm not working, I'm probably neck-deep in a new hobby. Lately it's been a math-inspired sculpture project, playing guitar, and running with my dog, Odin. Last year I decided to add Web Development to the list, and I fell in head-first. Now, I'm in the middle of Thinkful's Full-Stack Web Development Boot Camp and am looking to build a career using my curiosity to solve problems with the latest trends in the industry. 
+      </p>
+      <p>
+          I'm currently looking for work and can be reached using any of the links below.
+      </p>
+      <div class="technologies-container flex project-item">
+        <img src="images/Github-logo.png" alt="Github logo" class="contact-logo">
+        <img src="images/mail-gray.png" alt="An envelope"class="contact-logo">
+        <img src="images/linkedin-logo-transparent-rescaled.png" alt="Linkedin logo"class="contact-logo">
+      </div>
+    </section>
+    <footer class="footer">Made by David Haugen 2019</footer>
   </main>
 
   <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='' crossorigin='anonymous'></script>

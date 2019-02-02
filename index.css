@@ -37,25 +37,21 @@ nav {
   justify-content: space-around;
   padding-bottom: 2rem;
   border-bottom: 1px solid #5b6786;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
 section {
   min-height: 1vh;
-  padding: 6% 2%;
-  background-color: #bbb;
+  padding: 6% 4%;
   text-align: left;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
 }
 
 .home{
   background-color: #fcf8f3;
   min-height: 500px;
+  flex-direction: column;
 }
 
 .nav-list{
@@ -132,19 +128,51 @@ footer{
   flex-direction: column; 
 }
 
+
 .project-screenshot{
-  width: 90%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 1px black solid;
-  min-height: 350px;
+}
+
+.project-item{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.technologies-container{
+  padding-top: .8rem;
+}
+
+.about-me{
+  flex-direction: column;
 }
 
 .tech-logo{
   width: 22px;
-  display: block;
-
-  border: 1px black solid;
+  display: inline-block;
   height: 22px;
+  margin-right: 1rem;
 }
+
+.contact-logo{
+  width: 35px;
+  display: inline-block;
+  height: 35px;
+  margin-right: 1rem;
+}
+
+footer{
+  background-color: #fcf8f3;
+  color: #444;
+}
+
+.hidden{
+  display: none;
+}
+
+
+/* colors: #fcf8f3, #aedadd, #db996c, #6e7da2  https://colorhunt.co/palette/135437 */
