@@ -19,6 +19,17 @@ function handleProjectsClick(){
   });
 }
 
+function handleProjectsButton(){
+  $('.projects-link-button').on('click', function(event){
+    event.preventDefault();
+    console.log('click')
+    $('.project').removeClass('hidden');
+    $('.home').addClass('hidden');
+    $('.about-me').addClass('hidden');
+  });
+}
+
+
 function handleAboutClick(){
   $('#about-link').on('click', function(event){
     event.preventDefault();
@@ -32,6 +43,7 @@ function bindEventListeners(){
   handleHomeClick();
   handleProjectsClick();
   handleAboutClick();
+  handleProjectsButton();
 }
 
 $(bindEventListeners);

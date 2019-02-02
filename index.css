@@ -7,6 +7,7 @@
 
 html{
   background-color: #fcf8f3;
+  height: 100%
 }
 
 .flex{
@@ -23,11 +24,30 @@ body {
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 1.2em;
 }
 
+nav ul.flex{
+  flex: 1 0 auto;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;  
+}
 
+nav li{
+  flex: 1 0 auto;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+  text-align: center;
+  justify-content: space-around;
+  min-width: 0;
+}
 
-nav {
+#nav-list {
+  flex: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,34 +57,52 @@ nav {
   justify-content: space-around;
   padding-bottom: 2rem;
   border-bottom: 1px solid #5b6786;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
 
 section {
   min-height: 1vh;
-  padding: 6% 4%;
+  padding: 0 4%;
   text-align: left;
+  margin-bottom: 40px;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 
 .home{
   background-color: #fcf8f3;
-  min-height: 500px;
+  height: 80vh;
   flex-direction: column;
+  justify-content: center;
+    /* max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh; */
+  
 }
 
-.nav-list{
-  justify-content: center;
+#home-link{
+  font-size: 1.2em;
+
 }
+
+#projects-link{
+  font-size: 1em;
+}
+
+#about-link{
+  font-size: 1em;
+}
+
 
 .nav-link{ 
-  font-size: 1.2rem;
-  display: inline-block;
+  display: inline-flex;
   text-decoration: none;
   padding: .3vw 2vw;
   color: #5b6786;
-  height: 2rem;
 }
 
 .nav-link:hover{
@@ -73,21 +111,11 @@ section {
 
 main{
   padding-top: 70px;
-}
-
-footer{
-  background-color: #fff;
+  display: flex;
 }
 
 .button-container{
   display: inline-block;
-}
-
-.home{
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 100vh;
 }
 
 .button-solid{
@@ -126,6 +154,13 @@ footer{
 
 .project{
   flex-direction: column; 
+  height: 90vh;
+  
+}
+
+.project-title{
+  margin-top:0;
+  margin-bottom: 0;
 }
 
 
@@ -168,6 +203,10 @@ footer{
 footer{
   background-color: #fcf8f3;
   color: #444;
+  position: fixed;
+  font-size: .6em;
+  justify-content: flex-end;
+  bottom: 0;
 }
 
 .hidden{

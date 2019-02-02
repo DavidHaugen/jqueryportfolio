@@ -8,29 +8,33 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <nav role="navigation" class="flex nav-list">
-      <a href="" class="nav-link" id="home-link">David Haugen</a>
-      <a href="" class="nav-link" id="projects-link">Projects</a>
-      <a href="" class="nav-link" id="about-link">About me</a>
+  <nav role="navigation" class="flex" id="nav-list">
+    <ul class="flex">
+      <li>
+          <a href="" class="nav-link" id="home-link">David Haugen</a>
+      </li>
+      <li>
+          <a href="" class="nav-link" id="projects-link">Projects</a>
+      </li>
+      <li>
+          <a href="" class="nav-link" id="about-link">About me</a>
+      </li>
+    </ul>
   </nav>
   <main>
     <section class="home flex">
       <p id="home-paragraph">
-      Hi, I'm David. I'm a full-stack developer in Minneapolis, MN. I love dogs, learning, and learning about dogs.  Feel free to check out my work below and email me or  if you see something you like.
+      Hi, I'm David. I'm a full-stack developer currently living in Minneapolis, MN. I love dogs, learning, and learning about dogs.  Feel free to check out my work below and email me or  if you see something you like.
       </p>
       <div class="home-links">
-        <form class="button-container" id="projects-form">
-          <button type="submit" class="button-solid">Email me</button>
-        </form>
-        <form class="button-container" id="Email-form">
-          <button type="submit" class="button-border">Projects</button>
-        </form>
+          <a href="mailto:haugen.dj@gmail.com"><button class="button-solid">Email me</button></a>
+          <a href="" ><button type="submit" class="button-border projects-link-button" >Projects</button></a>
       </div>
-  </section>
-    <section class="project flex">
+    </section>
+    <section class="project flex hidden">
       <div class="project-container">
         <h2 class="project-title project-item">Animal quiz</h2>
-        <div class="image-container project item">
+        <div class="image-container project-item">
           <img src="/images/animal-quiz.png" alt="Project screenshot" class="project-screenshot">
         </div>
         <div class="technologies-container flex project-item">
@@ -44,18 +48,14 @@
       
       
       <div class="project-links project-item">
-          <form class="button-container" id="repo-form">
-            <button type="submit" class="button-border">View repo</button>
-          </form>
-          <form class="button-container" id="live-form">
-            <button type="submit" class="button-solid">Live app</button>
-          </form>
+            <a href="https://github.com/DavidHaugen/animal-quiz" target="_blank"><button class="button-border">View repo</button></a>
+            <a href="https://davidhaugen.github.io/animal-quiz/" target="_blank"><button class="button-solid">View repo</button></a>
         </div>
       </div>
     </section>
-    <!-- <section class="project">Project 2</section>
-    <section class="project">Project 3</section> -->
-    <section class="about-me flex">
+      <!-- <section class="project">Project 2</section>
+      <section class="project">Project 3</section> -->
+    <section class="about-me flex hidden">
       <p class="about-me-paragraph">
           I'm always trying to learn something new. If I'm not working, I'm probably neck-deep in a new hobby. Lately it's been a math-inspired sculpture project, playing guitar, and running with my dog, Odin. Last year I decided to add Web Development to the list, and I fell in head-first. Now, I'm in the middle of Thinkful's Full-Stack Web Development Boot Camp and am looking to build a career using my curiosity to solve problems with the latest trends in the industry. 
       </p>
@@ -63,12 +63,14 @@
           I'm currently looking for work and can be reached using any of the links below.
       </p>
       <div class="technologies-container flex project-item">
-        <img src="images/Github-logo.png" alt="Github logo" class="contact-logo">
-        <img src="images/mail-gray.png" alt="An envelope"class="contact-logo">
-        <img src="images/linkedin-logo-transparent-rescaled.png" alt="Linkedin logo"class="contact-logo">
+        <a href="https://github.com/DavidHaugen" target="_blank"><img src="images/Github-logo.png" alt="Github logo" class="contact-logo"><a>
+        <a href="mailto:haugen.dj@gmail.com"><img src="images/mail-gray.png" alt="An envelope"class="contact-logo"></a>
+        <a href="https://www.linkedin.com/in/haugen-david" target="_blank"><img src="images/linkedin-logo-transparent-rescaled.png" alt="Linkedin logo"class="contact-logo"></a>
       </div>
     </section>
-    <footer class="footer">Made by David Haugen 2019</footer>
+    <footer class="footer flex">
+      <p> Made by David Haugen 2019</p>
+    </footer>
   </main>
 
   <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='' crossorigin='anonymous'></script>
