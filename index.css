@@ -38,6 +38,7 @@ nav li{
   list-style: none;
   justify-content: space-around;
   min-width: 0;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 #nav-list {
@@ -58,7 +59,12 @@ section {
   margin-bottom: 40px;
   justify-content: center;
   flex-direction: column;
-  
+  font-family: 'Open Sans', sans-serif;
+}
+
+section.project{
+  margin-top: 50px;
+  margin-bottom: 125px;
 }
 
 .home{
@@ -193,6 +199,8 @@ footer{
   bottom: 0;
   height: 50px;
   width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .hidden{
@@ -228,7 +236,7 @@ footer{
 
   section{
     width: 70vw;
-    padding-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   ul{
