@@ -173,6 +173,7 @@ section.project{
 .about-me{
   height: 90vh;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .tech-logo{
